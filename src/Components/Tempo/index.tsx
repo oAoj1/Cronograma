@@ -14,9 +14,6 @@ export default function Tempo(){
   const diaAtual = String(criarData.getDate()).padStart(2,'0')
   const mes = String(criarData.getMonth() + 1).padStart(2,'0')
 
-  const [horas,setHoras] = useState<number>()
-  const [minutos,setMinutos] = useState<number>()
-  const [segundos,setSegundos] = useState<number>()
   const [periodoDia,setPeriodoDia] = useState<string>()
   const [icon,setIcon] = useState<any>()
 
@@ -31,12 +28,6 @@ export default function Tempo(){
     
   setInterval(() => {
     const criarHoras = criarData.getHours()
-    const criarMinutos = criarData.getMinutes()
-    const criarSegundos = criarData.getSeconds()
-
-    setHoras(tempoFormatado(criarHoras))
-    setMinutos(tempoFormatado(criarMinutos))
-    setSegundos(tempoFormatado(criarSegundos))
 
     if(criarHoras >= 0 && criarHoras <= 5){
       setPeriodoDia('Madrugada')
@@ -66,10 +57,6 @@ export default function Tempo(){
     <div className="tempoContainer">
 
       <div className="infoDia">
-
-        <div className="horas">
-          <span>{horas}:{minutos}:{segundos}</span> 
-        </div>
 
         <div className="periodoDia">
           <span>{periodoDia}{icon}</span>
