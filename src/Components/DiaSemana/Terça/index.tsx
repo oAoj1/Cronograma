@@ -12,6 +12,7 @@ export default function Terça(){
     const tardeTerca = [
         'Almoço',
         'Leitura',
+        'Correr',
         'Programar/Estudar',
     ]
 
