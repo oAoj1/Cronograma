@@ -13,12 +13,10 @@ export default function Terça(){
         'Almoço',
         'Leitura',
         'Programar/Estudar',
-        'Jogar'
     ]
 
     const noiteTerca = [
         'Programar/Estudar',
-        'Jogar',
         'Série/Filme'
     ]
 

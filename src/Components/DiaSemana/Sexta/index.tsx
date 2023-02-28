@@ -13,13 +13,11 @@ export default function Sexta(){
         'Almoço',
         'Leitura',
         'Programar/Estudar',
-        'Jogar'
     ]
 
     const noiteSexta = [
         'Academia',
         'Programar/Estudar',
-        'Jogar',
         'Série/Filme'
     ]
 

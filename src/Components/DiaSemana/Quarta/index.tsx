@@ -13,12 +13,10 @@ export default function Quarta(){
         'Almoço',
         'Leitura',
         'Programar/Estudar',
-        'Jogar'
     ]
 
     const noiteQuarta = [
         'Programar/Estudar',
-        'Jogar',
         'Série/Filme'
     ]
 

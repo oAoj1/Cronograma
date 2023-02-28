@@ -13,13 +13,11 @@ export default function Segunda(){
         'Almoço',
         'Leitura',
         'Programar/Estudar',
-        'Jogar'
     ]
 
     const noiteSegunda = [
         'Academia',
         'Programar/Estudar',
-        'Jogar',
         'Série/Filme'
     ]
 

@@ -49,10 +49,6 @@ export default function Tempo(){
 
   }, 1000)
 
-  function tempoFormatado(tempo:any){
-    return tempo < 10 ? '0' + tempo : tempo
-  }
-
   return(
     <div className="tempoContainer">
 
