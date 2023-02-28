@@ -1,0 +1,44 @@
+.tempoContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infoDia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoDia span{
+    display: flex;
+    align-items: center;
+}
+
+.horas span{
+    font-size: 1.75em;
+}
+
+.diaAtual span{
+    font-size: 1.75em;
+}
+
+.periodoDia span{
+    font-size: 5em;
+}
+
+.dia{
+    display: flex;
+    align-items: center;
+}
+
+.dia span{
+    color: #40494a;
+    filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.5));
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 0 1rem;
+}
