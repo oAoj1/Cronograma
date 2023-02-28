@@ -16,7 +16,28 @@ export default function Tempo(){
 
   const [periodoDia,setPeriodoDia] = useState<string>()
   const [icon,setIcon] = useState<any>()
-  const coresPeriodoDia = ['#00ffff','#fccf74','#341c8c','#170d3b']
+  const coresFundoPeriodoDia = ['#00ffff','#fccf74','#341c8c','#170d3b']
+  const corTextoPeriodoDia = ['#000','#fff']
+
+  const coresManha = {
+    backgroundColor: coresFundoPeriodoDia[0],
+    color:corTextoPeriodoDia[0]
+  }
+    
+  const coresTarde = {
+    backgroundColor: coresFundoPeriodoDia[1],
+    color:corTextoPeriodoDia[0]
+  }
+
+  const coresNoite = {
+    backgroundColor: coresFundoPeriodoDia[2],
+    color:corTextoPeriodoDia[1]
+  }
+
+  const coresMadrugada = {
+    backgroundColor: coresFundoPeriodoDia[3],
+    color:corTextoPeriodoDia[1]
+  }
 
   const diasFormatado = 
     diaSemana == 0 ? 'Domingo' : 
@@ -52,24 +73,25 @@ export default function Tempo(){
 
   useEffect(() => {
     if(periodoDia == 'Manhã'){
-      document.body.style.backgroundColor = coresPeriodoDia[0]
-      document.body.style.color = '#000'
+      mudarCores(coresManha.backgroundColor,coresManha.color)
 
     }else if(periodoDia == 'Tarde'){
-      document.body.style.backgroundColor = coresPeriodoDia[1]
-      document.body.style.color = '#000'
+      mudarCores(coresTarde.backgroundColor,coresTarde.color)
 
     }else if(periodoDia == 'Noite'){
-      document.body.style.backgroundColor = coresPeriodoDia[2]
-      document.body.style.color = '#fff'
+      mudarCores(coresNoite.backgroundColor,coresNoite.color)
 
     }else if(periodoDia == 'Madrugada'){
-      document.body.style.backgroundColor = coresPeriodoDia[3]
-      document.body.style.color = '#fff'
+      mudarCores(coresMadrugada.backgroundColor,coresMadrugada.color)
       
     }
     
   },[periodoDia])
+
+  function mudarCores(corFundo:any,corTexto:any){
+    document.body.style.backgroundColor = corFundo 
+    document.body.style.color = corTexto
+  }
   
   return(
     <div className="tempoContainer">
