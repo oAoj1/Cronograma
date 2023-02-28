@@ -69,6 +69,11 @@ export default function Tempo(){
       
     }
 
+    if(criarHoras === 0 || criarHoras === 6 || criarHoras === 12 || criarHoras === 18){
+      recarregarPagina()
+
+    }
+
   }, 1000)
 
   useEffect(() => {
@@ -87,6 +92,10 @@ export default function Tempo(){
     }
     
   },[periodoDia])
+
+  function recarregarPagina(){
+    window.location.reload()
+  }
 
   function mudarCores(corFundo:any,corTexto:any){
     document.body.style.backgroundColor = corFundo 
