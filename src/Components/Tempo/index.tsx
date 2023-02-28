@@ -1,5 +1,5 @@
 import './Tempo.css'
-import { useState,useRef } from 'react'
+import { useState,useEffect } from 'react'
 import Segunda from '../DiaSemana/Segunda'
 import Terça from '../DiaSemana/Terça'
 import Quarta from '../DiaSemana/Quarta'
@@ -16,6 +16,7 @@ export default function Tempo(){
 
   const [periodoDia,setPeriodoDia] = useState<string>()
   const [icon,setIcon] = useState<any>()
+  const coresPeriodoDia = ['#00ffff','#fccf74','#341c8c','#170d3b']
 
   const diasFormatado = 
     diaSemana == 0 ? 'Domingo' : 
@@ -49,6 +50,27 @@ export default function Tempo(){
 
   }, 1000)
 
+  useEffect(() => {
+    if(periodoDia == 'Manhã'){
+      document.body.style.backgroundColor = coresPeriodoDia[0]
+      document.body.style.color = '#000'
+
+    }else if(periodoDia == 'Tarde'){
+      document.body.style.backgroundColor = coresPeriodoDia[1]
+      document.body.style.color = '#000'
+
+    }else if(periodoDia == 'Noite'){
+      document.body.style.backgroundColor = coresPeriodoDia[2]
+      document.body.style.color = '#fff'
+
+    }else if(periodoDia == 'Madrugada'){
+      document.body.style.backgroundColor = coresPeriodoDia[3]
+      document.body.style.color = '#fff'
+      
+    }
+    
+  },[periodoDia])
+  
   return(
     <div className="tempoContainer">
 
@@ -61,7 +83,6 @@ export default function Tempo(){
         <div className="dia">
           <span>{diasFormatado}</span>
           <span>{diaAtual}/{mes}</span>
-
         </div>
         
       </div>
