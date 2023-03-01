@@ -1,6 +1,7 @@
 .diaSemanaContainer{
     display: flex;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .diaSemanaContainer ul{
@@ -16,6 +17,32 @@
 .diaSemanaContainer ul li{
     font-size: 1.5em;
     padding:  0.15em 0;
+}
+
+.estudosHojeTitulo{
+    text-align: center;
+    font-size: 3em;
+}
+
+.estudosHojeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estudosHojeContainer ul{
+    list-style-type: none;
+    margin: 1rem;
+}
+
+.estudosHojeContainer ul li{
+    font-size: 1.5em;
+    padding: 0.15em 0;
+}
+
+.estudosHojeContainer h2{
+    font-size: 2em;
+    text-decoration: underline;
 }
 
 @media screen and (max-width:768px){
