@@ -50,6 +50,7 @@ export default function Tempo(){
     
   setInterval(() => {
     const criarHoras = criarData.getHours()
+    const criarMinutos = criarData.getMinutes()
 
     if(criarHoras >= 0 && criarHoras <= 5){
       setPeriodoDia('Madrugada')
@@ -69,7 +70,7 @@ export default function Tempo(){
       
     }
 
-    if(criarHoras === 0 || criarHoras === 6 || criarHoras === 12 || criarHoras === 18){
+    if(criarHoras === 0 && criarMinutos == 0 || criarHoras === 6 && criarMinutos == 0 || criarHoras === 12 && criarMinutos == 0 || criarHoras === 18 && criarMinutos == 0){
       recarregarPagina()
 
     }
