@@ -5,32 +5,32 @@ export default function Sexta(){
         'Acordar',
         'Banheiro',
         'Arrumar cama',
-        'Leitura',
-        'Programar/Estudar'
+        'Leitura - Como fazer amigos',
+        'Estudar'
     ]
 
     const estudosManhaSexta = [
-        'Fatec'
+        'Fatec - Matemática'
     ]
 
     const tardeSexta = [
         'Almoço',
-        'Leitura',
+        'Leitura - Código limpo',
         'Programar/Estudar',
     ]
 
     const estudosTardeSexta = [
-        'Node.JS'
+        'Curso Node.JS(Alura)'
     ]
 
     const noiteSexta = [
         'Academia',
-        'Programar/Estudar',
+        'Estudar',
         'Série/Filme'
     ]
 
     const estudosNoiteSexta = [
-        'Redação'
+        'Redação - Tema 2023'
     ]
 
     return(

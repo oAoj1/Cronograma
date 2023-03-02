@@ -5,32 +5,32 @@ export default function Segunda(){
         'Acordar',
         'Banheiro',
         'Arrumar cama',
-        'Leitura',
-        'Programar/Estudar'
+        'Leitura - Como fazer amigos',
+        'Estudar'
     ]
 
     const estudosManhaSegunda = [
-        'Fatec'
+        'Fatec - Matemática'
     ]
 
     const tardeSegunda = [
         'Almoço',
-        'Leitura',
-        'Programar/Estudar',
+        'Leitura - Código Limpo',
+        'Programar/Estudar'
     ]
 
     const estudosTardeSegunda = [
-        'Node.JS'
+        'Curso Node.JS(Alura)'
     ]
 
     const noiteSegunda = [
         'Academia',
-        'Programar/Estudar',
+        'Estudar',
         'Série/Filme'
     ]
 
     const estudosNoiteSegunda = [
-        'Redação'
+        'Redação - Tema 2023'
     ]
 
     return(

@@ -5,27 +5,27 @@ export default function Terça(){
         'Acordar',
         'Banheiro',
         'Arrumar cama',
-        'Leitura',
+        'Leitura - Como fazer amigos',
         'Psicólogo'
     ]
 
     const estudosManhaTerca = [
-        'Fatec'
+        'Psicólogo'
     ]
 
     const tardeTerca = [
         'Almoço',
-        'Leitura',
+        'Leitura - Código limpo',
         'Correr',
         'Programar/Estudar',
     ]
 
     const estudosTardeTerca = [
-        'Node.JS'
+        'Curso Node.JS (Alura)'
     ]
 
     const noiteTerca = [
-        'Programar/Estudar',
+        'Estudar',
         'Série/Filme'
     ]
 

@@ -6,26 +6,26 @@ export default function Quarta(){
         'Acordar',
         'Banheiro',
         'Arrumar cama',
-        'Leitura',
-        'Futebol'
+        'Leitura - Como fazer amigos',
+        'Parque'
     ]
 
     const estudosManhaQuarta = [
-        'Fatec'
+        'Parque'
     ]
 
     const tardeQuarta = [
         'Almoço',
-        'Leitura',
+        'Leitura - Código limpo',
         'Programar/Estudar',
     ]
 
     const estudosTardeQuarta = [
-        'Node.JS'
+        'Curso Node.JS(Alura)'
     ]
 
     const noiteQuarta = [
-        'Programar/Estudar',
+        'Estudar',
         'Série/Filme'
     ]
     
