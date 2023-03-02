@@ -1,7 +1,6 @@
 .diaSemanaContainer{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
 }
 
 .diaSemanaContainer ul{
@@ -46,12 +45,14 @@
 }
 
 @media screen and (max-width:768px){
-    .diaSemanaContainer{
+    .diaSemanaContainer,
+    .estudosHojeContainer{
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
 
+    .diaSemanaContainer ul li,
     .diaSemanaContainer ul li{
         font-size: 1em;
     }
