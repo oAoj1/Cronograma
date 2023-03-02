@@ -39,6 +39,10 @@
 }
 
 @media screen and (max-width:768px){
+    .tempoContainer{
+        height: 100%;
+    }
+
     .periodoDia span{
         font-size: 3em;
     }
