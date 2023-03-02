@@ -6,7 +6,7 @@ export default function Quarta() {
         "Banheiro",
         "Arrumar cama",
         "Leitura - Como fazer amigos",
-        "Futebol",
+        "Correr",
     ]
 
     const estudosManhaQuinta = [
