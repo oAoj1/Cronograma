@@ -10,7 +10,7 @@ export default function Segunda(){
     ]
 
     const estudosManhaSegunda = [
-        'Fatec - Matemática'
+        'Fatec'
     ]
 
     const tardeSegunda = [

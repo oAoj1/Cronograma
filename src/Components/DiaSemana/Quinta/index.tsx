@@ -10,7 +10,7 @@ export default function Quarta() {
     ]
 
     const estudosManhaQuinta = [
-        "Fatec - Matemática"
+        "Fatec"
     ]
 
     const tardeQuinta = [
