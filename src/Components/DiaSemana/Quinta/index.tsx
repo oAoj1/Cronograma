@@ -1,12 +1,13 @@
 import "../DiaSemana.css";
 
-export default function Quarta() {
+export default function Quinta() {
     const manhaQuinta = [
         "Acordar",
         "Banheiro",
         "Arrumar cama",
         "Leitura - Como fazer amigos",
         "Correr",
+        "Estudar"
     ]
 
     const estudosManhaQuinta = [
