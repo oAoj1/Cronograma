@@ -1,6 +1,6 @@
 import '../DiaSemana.css'
 
-export default function Sexta(){
+export default function Sexta(periodoDia:any){
     const manhaSexta = [
         'Acordar',
         'Banheiro',
@@ -36,32 +36,35 @@ export default function Sexta(){
     return(
         <div>
             <section className="diaSemanaContainer">
-                <ul className="listaManha">
-                    <h2>Manhã</h2>
-                    {manhaSexta.map(manha => (
-                        <li key={manha}>
-                            {manha}
-                        </li>
-                    ))} 
-                </ul>
+            {periodoDia == 'Manhã' ? 
+            <ul className="listaManha">
+                <h2>Manhã</h2>
+                {manhaSexta.map(manha => (
+                    <li key={manha}>
+                        {manha}
+                    </li>
+                ))} 
+            </ul> : 
 
-                <ul className="listaTarde">
-                    <h2>Tarde</h2>
-                    {tardeSexta.map(tarde => (
-                        <li key={tarde}>
-                            {tarde}
-                        </li>
-                    ))} 
-                </ul>
+            periodoDia == 'Tarde'  ? 
+            <ul className="listaTarde">
+                <h2>Tarde</h2>
+                {tardeSexta.map(tarde => (
+                    <li key={tarde}>
+                        {tarde}
+                    </li>
+                ))} 
+            </ul> : 
 
-                <ul className="listaNoite">
-                    <h2>Noite</h2>
-                    {noiteSexta.map(noite => (
-                        <li key={noite}>
-                            {noite}
-                        </li>
-                    ))} 
-                </ul>
+            periodoDia == 'Noite' ? 
+            <ul className="listaNoite">
+                <h2>Noite</h2>
+                {noiteSexta.map(noite => (
+                    <li key={noite}>
+                        {noite}
+                    </li>
+                ))} 
+            </ul> : 'Vai dormir'}
                 
             </section>
 
@@ -69,26 +72,38 @@ export default function Sexta(){
 
             <h3 className="estudosHojeTitulo">Estudos de hoje</h3>
             <div className="estudosHojeContainer">
-                <ul className="estudosManha">
-                    <h2>Manhã</h2>
-                    {estudosManhaSexta.map((estudos) => (
-                    <li key={estudos}>{estudos}</li>
-                    ))}
-                </ul>
+            {periodoDia == 'Manhã' ? 
+            <ul className="estudosManha">
+                <h2>Manhã</h2>
+                {estudosManhaSexta.map((estudos) => (
+                    <li key={estudos}>
+                        {estudos}
+                    </li>
+                ))}
+            </ul> : 
 
-                <ul className="estudosTarde">
-                    <h2>Tarde</h2>
-                    {estudosTardeSexta.map((estudos) => (
-                    <li key={estudos}>{estudos}</li>
-                    ))}
-                </ul>
+        periodoDia == 'Tarde' ?
 
-                <ul className="estudosNoite">
-                    <h2>Noite</h2>
-                    {estudosNoiteSexta.map((estudos) => (
-                    <li key={estudos}>{estudos}</li>
-                    ))}
-                </ul>
+            <ul className="estudosTarde">
+                <h2>Tarde</h2>
+                {estudosTardeSexta.map((estudos) => (
+                    <li key={estudos}>
+                        {estudos}
+                    </li>
+                ))}
+
+            </ul> : 
+            
+        periodoDia == 'Noite' ? 
+
+            <ul className="estudosNoite">
+                <h2>Noite</h2>
+                {estudosNoiteSexta.map((estudos) => (
+                    <li key={estudos}>
+                        {estudos}
+                    </li>
+                ))}
+            </ul> : ''}
             </div>
         </div>
 
