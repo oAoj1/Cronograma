@@ -5,17 +5,17 @@ export default function Terça(periodoDia:any){
         'Acordar',
         'Banheiro',
         'Arrumar cama',
-        'Leitura - Como fazer amigos',
+        'Leitura',
         'Psicólogo'
     ]
 
     const estudosManhaTerca = [
-        'Psicólogo'
+        '-'
     ]
 
     const tardeTerca = [
         'Almoço',
-        'Leitura - Código limpo',
+        'Leitura',
         'Correr',
         'Programar/Estudar',
     ]
@@ -30,7 +30,7 @@ export default function Terça(periodoDia:any){
     ]
 
     const estudosNoiteTerca = [
-        'Redação'
+        'Curso Node.JS(Alura)'
     ]
 
     return(

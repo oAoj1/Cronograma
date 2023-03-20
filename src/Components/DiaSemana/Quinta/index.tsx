@@ -5,18 +5,18 @@ export default function Quinta(periodoDia:any) {
         "Acordar",
         "Banheiro",
         "Arrumar cama",
-        "Leitura - Como fazer amigos",
+        "Leitura",
         "Correr",
         "Estudar"
     ]
 
     const estudosManhaQuinta = [
-        "Fatec"
+        "Curso Node.JS(Alura)"
     ]
 
     const tardeQuinta = [
         "Almoço", 
-        "Leitura - Código limpo", 
+        "Leitura", 
         "Programar/Estudar"
     ]
 
@@ -30,7 +30,7 @@ export default function Quinta(periodoDia:any) {
     ]
 
     const estudosNoiteQuinta = [
-        "Redação"
+        "Curso Node.JS(Alura)"
     ]
 
   return (

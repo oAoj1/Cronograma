@@ -7,11 +7,11 @@ export default function Quarta(periodoDia:any){
         'Banheiro',
         'Arrumar cama',
         'Leitura - Como fazer amigos',
-        'Parque'
+        'Sair'
     ]
 
     const estudosManhaQuarta = [
-        'Parque'
+        '-'
     ]
 
     const tardeQuarta = [
@@ -30,7 +30,7 @@ export default function Quarta(periodoDia:any){
     ]
     
     const estudosNoiteQuarta = [
-        'Redação'
+        'Curso Node.JS(Alura)'
     ]
 
     return(

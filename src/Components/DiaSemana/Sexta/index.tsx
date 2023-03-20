@@ -5,17 +5,17 @@ export default function Sexta(periodoDia:any){
         'Acordar',
         'Banheiro',
         'Arrumar cama',
-        'Leitura - Como fazer amigos',
+        'Leitura',
         'Estudar'
     ]
 
     const estudosManhaSexta = [
-        'Fatec'
+        'Curso Node.JS(Alura)'
     ]
 
     const tardeSexta = [
         'Almoço',
-        'Leitura - Código limpo',
+        'Leitura',
         'Programar/Estudar',
     ]
 
@@ -30,7 +30,7 @@ export default function Sexta(periodoDia:any){
     ]
 
     const estudosNoiteSexta = [
-        'Redação - Tema 2023'
+        'Curso Node.JS(Alura)'
     ]
 
     return(

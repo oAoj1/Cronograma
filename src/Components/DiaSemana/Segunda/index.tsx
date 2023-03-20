@@ -5,17 +5,17 @@ export default function Segunda(periodoDia:any){
         'Acordar',
         'Banheiro',
         'Arrumar cama',
-        'Leitura - Como fazer amigos',
+        'Leitura',
         'Estudar'
     ]
 
     const estudosManhaSegunda = [
-        'Fatec'
+        'Curso Node.JS(Alura)'
     ]
 
     const tardeSegunda = [
         'Almoço',
-        'Leitura - Código Limpo',
+        'Leitura',
         'Programar/Estudar'
     ]
 
@@ -30,7 +30,7 @@ export default function Segunda(periodoDia:any){
     ]
 
     const estudosNoiteSegunda = [
-        'Redação - Tema 2023'
+        'Curso Node.JS(Alura)'
     ]
 
     return(
