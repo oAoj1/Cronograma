@@ -40,7 +40,7 @@ export default function Segunda(props:any){
                 {props.horario == 'Manhã' ? 
 
                     <ul className="listaManha">
-                        <h2>Manhã</h2>
+        
                         {manhaSegunda.map(manha => (
                             <li key={manha}>
                                 {manha}
@@ -49,7 +49,7 @@ export default function Segunda(props:any){
                     </ul> : props.horario == 'Tarde'  ?
 
                     <ul className="listaTarde">
-                        <h2>Tarde</h2>
+                        
                         {tardeSegunda.map(tarde => (
                             <li key={tarde}>
                                 {tarde}
@@ -58,7 +58,7 @@ export default function Segunda(props:any){
                     </ul> : props.horario == 'Noite' ?
 
                     <ul className="listaNoite">
-                        <h2>Noite</h2>
+                        
                         {noiteSegunda.map(noite => (
                             <li key={noite}>
                                 {noite}
@@ -72,12 +72,12 @@ export default function Segunda(props:any){
 
             <hr />
 
-            <h3 className="estudosHojeTitulo">Estudos de hoje</h3>
+            <h3 className="estudosHojeTitulo">Estudos</h3>
                 <div className="estudosHojeContainer">
 
                 {props.horario == 'Manhã' ? 
                     <ul className="estudosManha">
-                        <h2>Manhã</h2>
+                        
                         {estudosManhaSegunda.map((estudos) => (
                             <li key={estudos}>
                                 {estudos}
@@ -88,7 +88,7 @@ export default function Segunda(props:any){
                 props.horario == 'Tarde' ?
 
                     <ul className="estudosTarde">
-                        <h2>Tarde</h2>
+                        
                         {estudosTardeSegunda.map((estudos) => (
                             <li key={estudos}>
                                 {estudos}
@@ -100,7 +100,7 @@ export default function Segunda(props:any){
                 props.horario == 'Noite' ? 
 
                     <ul className="estudosNoite">
-                        <h2>Noite</h2>
+                        
                         {estudosNoiteSegunda.map((estudos) => (
                             <li key={estudos}>
                                 {estudos}

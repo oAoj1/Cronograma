@@ -39,7 +39,7 @@ export default function Terça(props:any){
 
                 {props.horario == 'Manhã' ? 
                     <ul className="listaManha">
-                        <h2>Manhã</h2>
+                        
                         {manhaTerca.map(manha => (
                             <li key={manha}>
                                 {manha}
@@ -49,7 +49,7 @@ export default function Terça(props:any){
 
                 props.horario == 'Tarde'  ? 
                     <ul className="listaTarde">
-                        <h2>Tarde</h2>
+                        
                         {tardeTerca.map(tarde => (
                             <li key={tarde}>
                                 {tarde}
@@ -59,7 +59,7 @@ export default function Terça(props:any){
 
                 props.horario == 'Noite' ? 
                     <ul className="listaNoite">
-                        <h2>Noite</h2>
+                        
                         {noiteTerca.map(noite => (
                             <li key={noite}>
                                 {noite}
@@ -76,7 +76,7 @@ export default function Terça(props:any){
                 <div className="estudosHojeContainer">
                 {props.horario == 'Manhã' ? 
                     <ul className="estudosManha">
-                        <h2>Manhã</h2>
+                        
                         {estudosManhaTerca.map((estudos) => (
                             <li key={estudos}>
                                 {estudos}
@@ -87,7 +87,7 @@ export default function Terça(props:any){
                 props.horario == 'Tarde' ?
 
                     <ul className="estudosTarde">
-                        <h2>Tarde</h2>
+                        
                         {estudosTardeTerca.map((estudos) => (
                             <li key={estudos}>
                                 {estudos}
@@ -99,7 +99,7 @@ export default function Terça(props:any){
                 props.horario == 'Noite' ? 
 
                     <ul className="estudosNoite">
-                        <h2>Noite</h2>
+                        
                         {estudosNoiteTerca.map((estudos) => (
                             <li key={estudos}>
                                 {estudos}

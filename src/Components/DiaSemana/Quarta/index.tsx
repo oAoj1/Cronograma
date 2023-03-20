@@ -38,7 +38,7 @@ export default function Quarta(props:any){
             <section className="diaSemanaContainer">
                 {props.horario == 'Manhã' ? 
                     <ul className="listaManha">
-                        <h2>Manhã</h2>
+                        
                         {manhaQuarta.map(manha => (
                             <li key={manha}>
                                 {manha}
@@ -48,7 +48,7 @@ export default function Quarta(props:any){
 
                 props.horario == 'Tarde'  ? 
                     <ul className="listaTarde">
-                        <h2>Tarde</h2>
+                        
                         {tardeQuarta.map(tarde => (
                             <li key={tarde}>
                                 {tarde}
@@ -58,7 +58,7 @@ export default function Quarta(props:any){
 
                 props.horario == 'Noite' ? 
                     <ul className="listaNoite">
-                        <h2>Noite</h2>
+                        
                         {noiteQuarta.map(noite => (
                             <li key={noite}>
                                 {noite}
@@ -75,7 +75,7 @@ export default function Quarta(props:any){
                 
                 {props.horario == 'Manhã' ? 
                     <ul className="estudosManha">
-                        <h2>Manhã</h2>
+                        
                         {estudosManhaQuarta.map((estudos) => (
                             <li key={estudos}>
                                 {estudos}
@@ -86,7 +86,7 @@ export default function Quarta(props:any){
                 props.horario == 'Tarde' ?
 
                     <ul className="estudosTarde">
-                        <h2>Tarde</h2>
+                        
                         {estudosTardeQuarta.map((estudos) => (
                             <li key={estudos}>
                                 {estudos}
@@ -98,7 +98,7 @@ export default function Quarta(props:any){
                 props.horario == 'Noite' ? 
 
                     <ul className="estudosNoite">
-                        <h2>Noite</h2>
+                        
                         {estudosNoiteQuarta.map((estudos) => (
                             <li key={estudos}>
                                 {estudos}

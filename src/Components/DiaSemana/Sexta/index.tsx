@@ -38,7 +38,7 @@ export default function Sexta(props:any){
             <section className="diaSemanaContainer">
             {props.horario == 'Manhã' ? 
             <ul className="listaManha">
-                <h2>Manhã</h2>
+                
                 {manhaSexta.map(manha => (
                     <li key={manha}>
                         {manha}
@@ -48,7 +48,7 @@ export default function Sexta(props:any){
 
             props.horario == 'Tarde'  ? 
             <ul className="listaTarde">
-                <h2>Tarde</h2>
+                
                 {tardeSexta.map(tarde => (
                     <li key={tarde}>
                         {tarde}
@@ -58,7 +58,7 @@ export default function Sexta(props:any){
 
             props.horario == 'Noite' ? 
             <ul className="listaNoite">
-                <h2>Noite</h2>
+                
                 {noiteSexta.map(noite => (
                     <li key={noite}>
                         {noite}
@@ -74,7 +74,7 @@ export default function Sexta(props:any){
             <div className="estudosHojeContainer">
             {props.horario == 'Manhã' ? 
             <ul className="estudosManha">
-                <h2>Manhã</h2>
+                
                 {estudosManhaSexta.map((estudos) => (
                     <li key={estudos}>
                         {estudos}
@@ -85,7 +85,7 @@ export default function Sexta(props:any){
         props.horario == 'Tarde' ?
 
             <ul className="estudosTarde">
-                <h2>Tarde</h2>
+                
                 {estudosTardeSexta.map((estudos) => (
                     <li key={estudos}>
                         {estudos}
@@ -97,7 +97,7 @@ export default function Sexta(props:any){
         props.horario == 'Noite' ? 
 
             <ul className="estudosNoite">
-                <h2>Noite</h2>
+                
                 {estudosNoiteSexta.map((estudos) => (
                     <li key={estudos}>
                         {estudos}

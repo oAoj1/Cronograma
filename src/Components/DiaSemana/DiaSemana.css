@@ -8,6 +8,12 @@
     margin: 1rem;
 }
 
+.listaManha li,
+.listaTarde li,
+.listaNoite li{
+    list-style-type: square;
+}
+
 .diaSemanaContainer h2{
     font-size: 2em;
     text-decoration: underline;
@@ -30,7 +36,7 @@
 }
 
 .estudosHojeContainer ul{
-    list-style-type: none;
+    list-style-type: square;
     margin: 1rem;
 }
 

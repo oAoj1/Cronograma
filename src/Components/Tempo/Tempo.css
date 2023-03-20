@@ -36,6 +36,7 @@
     font-style: italic;
     font-size: 1.5em;
     padding: 0 1rem;
+    text-decoration: underline;
 }
 
 @media screen and (max-width:768px){
