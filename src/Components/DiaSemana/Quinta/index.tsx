@@ -1,6 +1,6 @@
 import "../DiaSemana.css";
 
-export default function Quinta(periodoDia:any) {
+export default function Quinta(props:any) {
     const manhaQuinta = [
         "Acordar",
         "Banheiro",
@@ -36,7 +36,7 @@ export default function Quinta(periodoDia:any) {
   return (
     <div>
       <section className="diaSemanaContainer">
-        {periodoDia == 'Manhã' ? 
+        {props.horario == 'Manhã' ? 
             <ul className="listaManha">
                 <h2>Manhã</h2>
                 {manhaQuinta.map(manha => (
@@ -46,7 +46,7 @@ export default function Quinta(periodoDia:any) {
                 ))} 
             </ul> : 
 
-        periodoDia == 'Tarde'  ? 
+        props.horario == 'Tarde'  ? 
             <ul className="listaTarde">
                 <h2>Tarde</h2>
                 {tardeQuinta.map(tarde => (
@@ -56,7 +56,7 @@ export default function Quinta(periodoDia:any) {
                 ))} 
             </ul> : 
 
-        periodoDia == 'Noite' ? 
+        props.horario == 'Noite' ? 
             <ul className="listaNoite">
                 <h2>Noite</h2>
                 {noiteQuinta.map(noite => (
@@ -71,7 +71,7 @@ export default function Quinta(periodoDia:any) {
 
       <h3 className="estudosHojeTitulo">Estudos de hoje</h3>
       <div className="estudosHojeContainer">
-        {periodoDia == 'Manhã' ? 
+        {props.horario == 'Manhã' ? 
             <ul className="estudosManha">
                 <h2>Manhã</h2>
                 {estudosManhaQuinta.map((estudos) => (
@@ -81,7 +81,7 @@ export default function Quinta(periodoDia:any) {
                 ))}
             </ul> : 
 
-        periodoDia == 'Tarde' ?
+        props.horario == 'Tarde' ?
 
             <ul className="estudosTarde">
                 <h2>Tarde</h2>
@@ -93,7 +93,7 @@ export default function Quinta(periodoDia:any) {
 
             </ul> : 
             
-        periodoDia == 'Noite' ? 
+        props.horario == 'Noite' ? 
 
             <ul className="estudosNoite">
                 <h2>Noite</h2>

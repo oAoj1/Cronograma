@@ -1,6 +1,6 @@
 import '../DiaSemana.css'
 
-export default function Segunda(periodoDia:any){
+export default function Segunda(props:any){
     const manhaSegunda = [
         'Acordar',
         'Banheiro',
@@ -37,7 +37,8 @@ export default function Segunda(periodoDia:any){
         <div>
             <section className="diaSemanaContainer">
 
-                {periodoDia == 'Manhã' ? 
+                {props.horario == 'Manhã' ? 
+
                     <ul className="listaManha">
                         <h2>Manhã</h2>
                         {manhaSegunda.map(manha => (
@@ -45,9 +46,8 @@ export default function Segunda(periodoDia:any){
                                 {manha}
                             </li>
                         ))} 
-                    </ul> : 
+                    </ul> : props.horario == 'Tarde'  ?
 
-                periodoDia == 'Tarde'  ? 
                     <ul className="listaTarde">
                         <h2>Tarde</h2>
                         {tardeSegunda.map(tarde => (
@@ -55,9 +55,8 @@ export default function Segunda(periodoDia:any){
                                 {tarde}
                             </li>
                         ))} 
-                    </ul> : 
+                    </ul> : props.horario == 'Noite' ?
 
-                periodoDia == 'Noite' ? 
                     <ul className="listaNoite">
                         <h2>Noite</h2>
                         {noiteSegunda.map(noite => (
@@ -65,6 +64,7 @@ export default function Segunda(periodoDia:any){
                                 {noite}
                             </li>
                         ))} 
+
                     </ul> : 'Vai dormir'
                 }      
                 
@@ -75,7 +75,7 @@ export default function Segunda(periodoDia:any){
             <h3 className="estudosHojeTitulo">Estudos de hoje</h3>
                 <div className="estudosHojeContainer">
 
-                {periodoDia == 'Manhã' ? 
+                {props.horario == 'Manhã' ? 
                     <ul className="estudosManha">
                         <h2>Manhã</h2>
                         {estudosManhaSegunda.map((estudos) => (
@@ -85,7 +85,7 @@ export default function Segunda(periodoDia:any){
                         ))}
                     </ul> : 
 
-                periodoDia == 'Tarde' ?
+                props.horario == 'Tarde' ?
 
                     <ul className="estudosTarde">
                         <h2>Tarde</h2>
@@ -97,7 +97,7 @@ export default function Segunda(periodoDia:any){
 
                     </ul> : 
                     
-                periodoDia == 'Noite' ? 
+                props.horario == 'Noite' ? 
 
                     <ul className="estudosNoite">
                         <h2>Noite</h2>
@@ -106,6 +106,7 @@ export default function Segunda(periodoDia:any){
                                 {estudos}
                             </li>
                         ))}
+                        
                     </ul> : ''}
  
             </div>

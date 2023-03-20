@@ -120,11 +120,11 @@ export default function Tempo(){
       </div>
 
       <div className="atividadesDia">
-        {diaSemana == 1 ? <Segunda periodoDia={periodoDia} /> : 
-        diaSemana == 2 ? <Terça periodoDia={periodoDia}/> :
-        diaSemana == 3 ? <Quarta periodoDia={periodoDia}/> :
-        diaSemana == 4 ? <Quinta periodoDia={periodoDia}/> :
-        diaSemana == 5 ? <Sexta periodoDia={periodoDia}/> : 
+        {diaSemana == 1 ? <Segunda horario={periodoDia}/> : 
+        diaSemana == 2 ? <Terça horario={periodoDia}/> :
+        diaSemana == 3 ? <Quarta horario={periodoDia}/> :
+        diaSemana == 4 ? <Quinta horario={periodoDia}/> :
+        diaSemana == 5 ? <Sexta horario={periodoDia}/> : 
         'Descanse hoje ;)'}
       </div>
       

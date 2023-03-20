@@ -1,6 +1,6 @@
 import '../DiaSemana.css'
 
-export default function Sexta(periodoDia:any){
+export default function Sexta(props:any){
     const manhaSexta = [
         'Acordar',
         'Banheiro',
@@ -36,7 +36,7 @@ export default function Sexta(periodoDia:any){
     return(
         <div>
             <section className="diaSemanaContainer">
-            {periodoDia == 'Manhã' ? 
+            {props.horario == 'Manhã' ? 
             <ul className="listaManha">
                 <h2>Manhã</h2>
                 {manhaSexta.map(manha => (
@@ -46,7 +46,7 @@ export default function Sexta(periodoDia:any){
                 ))} 
             </ul> : 
 
-            periodoDia == 'Tarde'  ? 
+            props.horario == 'Tarde'  ? 
             <ul className="listaTarde">
                 <h2>Tarde</h2>
                 {tardeSexta.map(tarde => (
@@ -56,7 +56,7 @@ export default function Sexta(periodoDia:any){
                 ))} 
             </ul> : 
 
-            periodoDia == 'Noite' ? 
+            props.horario == 'Noite' ? 
             <ul className="listaNoite">
                 <h2>Noite</h2>
                 {noiteSexta.map(noite => (
@@ -72,7 +72,7 @@ export default function Sexta(periodoDia:any){
 
             <h3 className="estudosHojeTitulo">Estudos de hoje</h3>
             <div className="estudosHojeContainer">
-            {periodoDia == 'Manhã' ? 
+            {props.horario == 'Manhã' ? 
             <ul className="estudosManha">
                 <h2>Manhã</h2>
                 {estudosManhaSexta.map((estudos) => (
@@ -82,7 +82,7 @@ export default function Sexta(periodoDia:any){
                 ))}
             </ul> : 
 
-        periodoDia == 'Tarde' ?
+        props.horario == 'Tarde' ?
 
             <ul className="estudosTarde">
                 <h2>Tarde</h2>
@@ -94,7 +94,7 @@ export default function Sexta(periodoDia:any){
 
             </ul> : 
             
-        periodoDia == 'Noite' ? 
+        props.horario == 'Noite' ? 
 
             <ul className="estudosNoite">
                 <h2>Noite</h2>
