@@ -109,7 +109,7 @@ export default function Tempo(){
       <div className="infoDia">
 
         <div className="periodoDia">
-          <span>{periodoDia}{icon}</span>
+          <h2>{periodoDia}{icon}</h2>
         </div>
         
         <div className="dia">

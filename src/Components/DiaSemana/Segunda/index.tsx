@@ -1,3 +1,4 @@
+import ModeloDia from '../ModeloDia'
 import '../DiaSemana.css'
 
 export default function Segunda(props:any){
@@ -9,24 +10,24 @@ export default function Segunda(props:any){
         'Estudar'
     ]
 
-    const estudosManhaSegunda = [
-        'Curso Node.JS(Alura)'
-    ]
-
     const tardeSegunda = [
         'Almoço',
         'Leitura',
         'Programar/Estudar'
     ]
-
-    const estudosTardeSegunda = [
-        'Curso Node.JS(Alura)'
-    ]
-
+    
     const noiteSegunda = [
         'Academia',
         'Estudar',
         'Série/Filme'
+    ]
+
+    const estudosManhaSegunda = [
+        'Curso Node.JS(Alura)'
+    ]
+
+    const estudosTardeSegunda = [
+        'Curso Node.JS(Alura)'
     ]
 
     const estudosNoiteSegunda = [
@@ -35,81 +36,15 @@ export default function Segunda(props:any){
 
     return(
         <div>
-            <section className="diaSemanaContainer">
-
-                {props.horario == 'Manhã' ? 
-
-                    <ul className="listaManha">
-        
-                        {manhaSegunda.map(manha => (
-                            <li key={manha}>
-                                {manha}
-                            </li>
-                        ))} 
-                    </ul> : props.horario == 'Tarde'  ?
-
-                    <ul className="listaTarde">
-                        
-                        {tardeSegunda.map(tarde => (
-                            <li key={tarde}>
-                                {tarde}
-                            </li>
-                        ))} 
-                    </ul> : props.horario == 'Noite' ?
-
-                    <ul className="listaNoite">
-                        
-                        {noiteSegunda.map(noite => (
-                            <li key={noite}>
-                                {noite}
-                            </li>
-                        ))} 
-
-                    </ul> : 'Vai dormir'
-                }      
-                
-            </section>
-
-            <hr />
-
-            <h3 className="estudosHojeTitulo">Estudos</h3>
-                <div className="estudosHojeContainer">
-
-                {props.horario == 'Manhã' ? 
-                    <ul className="estudosManha">
-                        
-                        {estudosManhaSegunda.map((estudos) => (
-                            <li key={estudos}>
-                                {estudos}
-                            </li>
-                        ))}
-                    </ul> : 
-
-                props.horario == 'Tarde' ?
-
-                    <ul className="estudosTarde">
-                        
-                        {estudosTardeSegunda.map((estudos) => (
-                            <li key={estudos}>
-                                {estudos}
-                            </li>
-                        ))}
-
-                    </ul> : 
-                    
-                props.horario == 'Noite' ? 
-
-                    <ul className="estudosNoite">
-                        
-                        {estudosNoiteSegunda.map((estudos) => (
-                            <li key={estudos}>
-                                {estudos}
-                            </li>
-                        ))}
-                        
-                    </ul> : ''}
- 
-            </div>
+            <ModeloDia
+                horario={props.horario}
+                manha={manhaSegunda}
+                tarde={tardeSegunda}
+                noite={noiteSegunda}
+                estudosManha={estudosManhaSegunda}
+                estudosTarde={estudosTardeSegunda}
+                estudosNoite={estudosNoiteSegunda}
+            />
         </div>
         
     )

@@ -1,3 +1,4 @@
+import ModeloDia from '../ModeloDia'
 import "../DiaSemana.css";
 
 export default function Quinta(props:any) {
@@ -35,75 +36,15 @@ export default function Quinta(props:any) {
 
   return (
     <div>
-      <section className="diaSemanaContainer">
-        {props.horario == 'Manhã' ? 
-            <ul className="listaManha">
-                
-                {manhaQuinta.map(manha => (
-                    <li key={manha}>
-                        {manha}
-                    </li>
-                ))} 
-            </ul> : 
-
-        props.horario == 'Tarde'  ? 
-            <ul className="listaTarde">
-                
-                {tardeQuinta.map(tarde => (
-                    <li key={tarde}>
-                        {tarde}
-                    </li>
-                ))} 
-            </ul> : 
-
-        props.horario == 'Noite' ? 
-            <ul className="listaNoite">
-                
-                {noiteQuinta.map(noite => (
-                    <li key={noite}>
-                        {noite}
-                    </li>
-                ))} 
-            </ul> : 'Vai dormir'} 
-      </section>
-
-      <hr />
-
-      <h3 className="estudosHojeTitulo">Estudos de hoje</h3>
-      <div className="estudosHojeContainer">
-        {props.horario == 'Manhã' ? 
-            <ul className="estudosManha">
-                
-                {estudosManhaQuinta.map((estudos) => (
-                    <li key={estudos}>
-                        {estudos}
-                    </li>
-                ))}
-            </ul> : 
-
-        props.horario == 'Tarde' ?
-
-            <ul className="estudosTarde">
-                
-                {estudosTardeQuinta.map((estudos) => (
-                    <li key={estudos}>
-                        {estudos}
-                    </li>
-                ))}
-
-            </ul> : 
-            
-        props.horario == 'Noite' ? 
-
-            <ul className="estudosNoite">
-                
-                {estudosNoiteQuinta.map((estudos) => (
-                    <li key={estudos}>
-                        {estudos}
-                    </li>
-                ))}
-            </ul> : ''}
-      </div>
+        <ModeloDia
+            horario={props.horario}
+            manha={manhaQuinta}
+            tarde={tardeQuinta}
+            noite={noiteQuinta}
+            estudosManha={estudosManhaQuinta}
+            estudosTarde={estudosTardeQuinta}
+            estudosNoite={estudosNoiteQuinta}
+        />
     </div>
   );
 }

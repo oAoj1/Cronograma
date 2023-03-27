@@ -24,11 +24,6 @@
     padding:  0.15em 0;
 }
 
-.estudosHojeTitulo{
-    text-align: center;
-    font-size: 3em;
-}
-
 .estudosHojeContainer{
     display: flex;
     align-items: center;
@@ -50,6 +45,13 @@
     text-decoration: underline;
 }
 
+.estudosHojeTitulo{
+    text-align: center;
+    font-size: 3.75em;
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width:768px){
     .diaSemanaContainer,
     .estudosHojeContainer{
@@ -59,7 +61,8 @@
     }
 
     .diaSemanaContainer ul li,
-    .diaSemanaContainer ul li{
-        font-size: 1em;
+    .diaSemanaContainer ul li,
+    .estudosHojeContainer ul li{
+        font-size: 1.25em;
     }
 }
