@@ -11,18 +11,10 @@ export default function Quinta(props:any) {
         "Estudar"
     ]
 
-    const estudosManhaQuinta = [
-        "Curso Node.JS(Alura)"
-    ]
-
     const tardeQuinta = [
         "Almoço", 
         "Leitura", 
         "Programar/Estudar"
-    ]
-
-    const estudosTardeQuinta = [
-        "Curso Node.JS(Alura)"
     ]
 
     const noiteQuinta = [
@@ -30,8 +22,17 @@ export default function Quinta(props:any) {
         "Série/Filme"
     ]
 
+    const estudosManhaQuinta = [
+        "Redação"
+    ]
+
+
+    const estudosTardeQuinta = [
+        "Fatec"
+    ]
+
     const estudosNoiteQuinta = [
-        "Curso Node.JS(Alura)"
+        "-"
     ]
 
   return (

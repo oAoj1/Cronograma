@@ -10,18 +10,10 @@ export default function Sexta(props:any){
         'Estudar'
     ]
 
-    const estudosManhaSexta = [
-        'Curso Node.JS(Alura)'
-    ]
-
     const tardeSexta = [
         'Almoço',
         'Leitura',
-        'Programar/Estudar',
-    ]
-
-    const estudosTardeSexta = [
-        'Curso Node.JS(Alura)'
+        'Estudar',
     ]
 
     const noiteSexta = [
@@ -30,8 +22,16 @@ export default function Sexta(props:any){
         'Série/Filme'
     ]
 
+    const estudosManhaSexta = [
+        'Redação'
+    ]
+
+    const estudosTardeSexta = [
+        'Fatec'
+    ]
+
     const estudosNoiteSexta = [
-        'Curso Node.JS(Alura)'
+        '-'
     ]
 
     return(

@@ -7,22 +7,15 @@ export default function Terça(props:any){
         'Banheiro',
         'Arrumar cama',
         'Leitura',
+        'Estudar',
         'Psicólogo'
-    ]
-
-    const estudosManhaTerca = [
-        '-'
     ]
 
     const tardeTerca = [
         'Almoço',
         'Leitura',
         'Correr',
-        'Programar/Estudar',
-    ]
-
-    const estudosTardeTerca = [
-        'Curso Node.JS (Alura)'
+        'Estudar',
     ]
 
     const noiteTerca = [
@@ -30,8 +23,17 @@ export default function Terça(props:any){
         'Série/Filme'
     ]
 
+    const estudosManhaTerca = [
+        'Redação'
+    ]
+
+
+    const estudosTardeTerca = [
+        'Fatec'
+    ]
+
     const estudosNoiteTerca = [
-        'Curso Node.JS(Alura)'
+        '-'
     ]
 
     return(

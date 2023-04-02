@@ -7,32 +7,32 @@ export default function Quarta(props:any){
         'Acordar',
         'Banheiro',
         'Arrumar cama',
-        'Leitura - Como fazer amigos',
-        'Sair'
-    ]
-
-    const estudosManhaQuarta = [
-        '-'
+        'Leitura',
     ]
 
     const tardeQuarta = [
         'Almoço',
-        'Leitura - Código limpo',
-        'Programar/Estudar',
-    ]
-
-    const estudosTardeQuarta = [
-        'Curso Node.JS(Alura)'
+        'Leitura',
+        'Estudar',
     ]
 
     const noiteQuarta = [
         'Estudar',
         'Série/Filme'
     ]
+
+    const estudosManhaQuarta = [
+        'Redação'
+    ]
+    
+    const estudosTardeQuarta = [
+        'Fatec'
+    ]
     
     const estudosNoiteQuarta = [
-        'Curso Node.JS(Alura)'
+        '-'
     ]
+    
 
     return(
         <div>

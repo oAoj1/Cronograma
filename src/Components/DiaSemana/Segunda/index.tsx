@@ -13,7 +13,7 @@ export default function Segunda(props:any){
     const tardeSegunda = [
         'Almoço',
         'Leitura',
-        'Programar/Estudar'
+        'Estudar'
     ]
     
     const noiteSegunda = [
@@ -23,15 +23,15 @@ export default function Segunda(props:any){
     ]
 
     const estudosManhaSegunda = [
-        'Curso Node.JS(Alura)'
+        'Redação'
     ]
 
     const estudosTardeSegunda = [
-        'Curso Node.JS(Alura)'
+        'Fatec'
     ]
 
     const estudosNoiteSegunda = [
-        'Curso Node.JS(Alura)'
+        '-'
     ]
 
     return(
