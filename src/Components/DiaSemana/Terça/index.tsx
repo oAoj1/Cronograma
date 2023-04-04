@@ -19,7 +19,6 @@ export default function Terça(props:any){
     ]
 
     const noiteTerca = [
-        'Estudar',
         'Série/Filme'
     ]
 

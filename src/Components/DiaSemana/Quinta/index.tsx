@@ -18,7 +18,6 @@ export default function Quinta(props:any) {
     ]
 
     const noiteQuinta = [
-        "Estudar", 
         "Série/Filme"
     ]
 
