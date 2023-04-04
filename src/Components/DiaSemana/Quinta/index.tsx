@@ -27,7 +27,7 @@ export default function Quinta(props:any) {
 
 
     const estudosTardeQuinta = [
-        "Fatec"
+        "Redação"
     ]
 
     const estudosNoiteQuinta = [

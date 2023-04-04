@@ -26,7 +26,7 @@ export default function Sexta(props:any){
     ]
 
     const estudosTardeSexta = [
-        'Fatec'
+        'Redação'
     ]
 
     const estudosNoiteSexta = [
