@@ -8,6 +8,7 @@ export default function Terça(props:any){
         'Arrumar cama',
         'Leitura',
         'Estudar',
+        'Escrever',
         'Psicólogo'
     ]
 

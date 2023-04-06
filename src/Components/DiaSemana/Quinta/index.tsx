@@ -7,6 +7,7 @@ export default function Quinta(props:any) {
         "Banheiro",
         "Arrumar cama",
         "Leitura",
+        "Escrever",
         "Correr",
         "Estudar"
     ]

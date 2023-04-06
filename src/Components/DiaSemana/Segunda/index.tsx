@@ -7,6 +7,7 @@ export default function Segunda(props:any){
         'Banheiro',
         'Arrumar cama',
         'Leitura',
+        'Escrever',
         'Estudar'
     ]
 

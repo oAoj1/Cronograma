@@ -7,6 +7,7 @@ export default function Sexta(props:any){
         'Banheiro',
         'Arrumar cama',
         'Leitura',
+        'Escrever',
         'Estudar'
     ]
 

@@ -7,7 +7,9 @@ export default function Quarta(props:any){
         'Acordar',
         'Banheiro',
         'Arrumar cama',
-        'Leitura',
+        'Estudar',
+        'Escrever',
+        'Leitura'
     ]
 
     const tardeQuarta = [
