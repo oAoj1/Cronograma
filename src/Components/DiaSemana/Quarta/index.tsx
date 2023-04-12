@@ -9,7 +9,8 @@ export default function Quarta(props:any){
         'Arrumar cama',
         'Estudar',
         'Escrever',
-        'Leitura'
+        'Leitura',
+        'Estudar'
     ]
 
     const tardeQuarta = [
@@ -19,6 +20,7 @@ export default function Quarta(props:any){
     ]
 
     const noiteQuarta = [
+        'Estudar',
         'Série/Filme'
     ]
 
@@ -27,11 +29,11 @@ export default function Quarta(props:any){
     ]
     
     const estudosTardeQuarta = [
-        'Redação'
+        'Node.JS'
     ]
     
     const estudosNoiteQuarta = [
-        '-'
+        'Inglês'
     ]
     
 

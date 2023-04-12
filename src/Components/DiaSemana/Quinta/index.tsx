@@ -15,10 +15,11 @@ export default function Quinta(props:any) {
     const tardeQuinta = [
         "Almoço", 
         "Leitura", 
-        "Programar/Estudar"
+        "Estudar"
     ]
 
     const noiteQuinta = [
+        'Estudar',
         "Série/Filme"
     ]
 
@@ -28,11 +29,11 @@ export default function Quinta(props:any) {
 
 
     const estudosTardeQuinta = [
-        "Redação"
+        "Node.JS"
     ]
 
     const estudosNoiteQuinta = [
-        "-"
+        "Inglês"
     ]
 
   return (

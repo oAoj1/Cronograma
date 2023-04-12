@@ -18,6 +18,7 @@ export default function Sexta(props:any){
     ]
 
     const noiteSexta = [
+        'Estudar',
         'Academia',
         'Série/Filme'
     ]
@@ -27,11 +28,11 @@ export default function Sexta(props:any){
     ]
 
     const estudosTardeSexta = [
-        'Redação'
+        'Node.JS'
     ]
 
     const estudosNoiteSexta = [
-        '-'
+        'Inglês'
     ]
 
     return(

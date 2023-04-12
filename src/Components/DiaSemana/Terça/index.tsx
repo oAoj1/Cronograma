@@ -20,6 +20,7 @@ export default function Terça(props:any){
     ]
 
     const noiteTerca = [
+        'Estudar',
         'Série/Filme'
     ]
 
@@ -29,11 +30,11 @@ export default function Terça(props:any){
 
 
     const estudosTardeTerca = [
-        'Redação'
+        'Node.JS'
     ]
 
     const estudosNoiteTerca = [
-        '-'
+        'Inglês'
     ]
 
     return(

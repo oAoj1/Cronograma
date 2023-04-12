@@ -19,6 +19,7 @@ export default function Segunda(props:any){
     
     const noiteSegunda = [
         'Academia',
+        'Estudar',
         'Série/Filme'
     ]
 
@@ -27,11 +28,11 @@ export default function Segunda(props:any){
     ]
 
     const estudosTardeSegunda = [
-        'Redação'
+        'Node.JS'
     ]
 
     const estudosNoiteSegunda = [
-        '-'
+        'Inglês'
     ]
 
     return(
