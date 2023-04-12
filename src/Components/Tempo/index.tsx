@@ -16,6 +16,7 @@ export default function Tempo(){
 
   const [periodoDia,setPeriodoDia] = useState<string>()
   const [icon,setIcon] = useState<any>()
+
   const coresFundoPeriodoDia = ['#00ffff','#fccf74','#341c8c','#170d3b']
   const corTextoPeriodoDia = ['#000','#fff']
 
