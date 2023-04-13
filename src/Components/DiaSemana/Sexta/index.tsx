@@ -19,7 +19,6 @@ export default function Sexta(props:any){
 
     const noiteSexta = [
         'Estudar',
-        'Academia',
         'Série/Filme'
     ]
 

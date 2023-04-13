@@ -7,7 +7,6 @@ export default function Quarta(props:any){
         'Acordar',
         'Banheiro',
         'Arrumar cama',
-        'Estudar',
         'Escrever',
         'Leitura',
         'Estudar'

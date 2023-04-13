@@ -8,7 +8,6 @@ export default function Quinta(props:any) {
         "Arrumar cama",
         "Leitura",
         "Escrever",
-        "Correr",
         "Estudar"
     ]
 
@@ -19,6 +18,7 @@ export default function Quinta(props:any) {
     ]
 
     const noiteQuinta = [
+        'Academia',
         'Estudar',
         "Série/Filme"
     ]
